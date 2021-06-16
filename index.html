@@ -4,7 +4,115 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Burger</title>
   </head>
-  <body></body>
+  <body>
+    <section class="burgerMenu">
+      <div class="wrapper">
+        <div class="header">
+          <div class="icon"></div>
+        </div>
+        <div class="section" id="s1">
+          1. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Blanditiis nesciunt vitae dicta iusto eaque ad ipsa neque molestiae!
+          Qui a sit similique maiores adipisci inventore culpa excepturi ut est
+          aliquam magnam odit esse quo vero veritatis, mollitia quis nobis
+          nihil.
+        </div>
+        <div class="section" id="s2" hidden="true">
+          2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+          porro.
+        </div>
+        <div class="section" id="s3" hidden="true">
+          3. Lorem ipsum dolor sit amet.
+        </div>
+
+        <div class="section menu" hidden="true">
+          <ul class="menuList">
+            <li class="listElem"><a href="#s1">Section №1</a></li>
+            <li class="listElem"><a href="#s2">Section №2</a></li>
+            <li class="listElem"><a href="#s3">Section №3</a></li>
+          </ul>
+        </div>
+        <div class="line backgrGray"></div>
+      </div>
+    </section>
+
+    <section class="accordion">
+      <div class="form">
+        <div class="lineAcc"></div>
+        <p class="title">ACCORDION ELEMENTS</p>
+        <ul class="accordionList">
+          <li class="accElem">
+            <p class="accElemTitle">Element 1</p>
+            <div class="checkT"></div>
+          </li>
+          <p class="text" hidden="true">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+            tempora mollitia quo cum a pariatur quis. Facilis quisquam iste
+            veniam!
+          </p>
+
+          <li class="accElem">
+            <p class="accElemTitle">Element 2</p>
+            <div class="checkT"></div>
+          </li>
+          <p class="text" hidden="true">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id,
+            reprehenderit.
+          </p>
+
+          <li class="accElem">
+            <p class="accElemTitle">Element 3</p>
+            <div class="checkT"></div>
+          </li>
+          <p class="text" hidden="true">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slider">
+      <div class="wrapSlider">
+        <div class="str">
+          <img src="img/arrow.png" alt="" class="arrow" />
+        </div>
+        <div class="wrapElem">
+          <div class="element">
+            <img src="img/rose.jpg" alt="" class="img" />
+            <p class="imgTitle">Роза</p>
+          </div>
+          <div class="element">
+            <img src="img/camomile.jpg" alt="" class="img" />
+            <p class="imgTitle">Ромашка</p>
+          </div>
+          <div class="element">
+            <img src="img/lotus.jpg" alt="" class="img" />
+            <p class="imgTitle">Лотус</p>
+          </div>
+          <div class="element hidden">
+            <img src="img/gerbera.jpg" alt="" class="img" />
+            <p class="imgTitle">Гербера</p>
+          </div>
+          <div class="element hidden">
+            <img src="img/camellia.jpg" alt="" class="img" />
+            <p class="imgTitle">Камелия</p>
+          </div>
+          <div class="element hidden">
+            <img src="img/pion.jpg" alt="" class="img" />
+            <p class="imgTitle">Пион</p>
+          </div>
+        </div>
+        <div class="str">
+          <img src="img/arrow.png" alt="" class="arrow right" />
+        </div>
+      </div>
+    </section>
+
+    <script src="burger.js"></script>
+    <script src="accordion.js"></script>
+    <script src="slider.js"></script>
+  </body>
 </html>
