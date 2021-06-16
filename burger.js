@@ -5,8 +5,6 @@ let section = document.querySelector("#s1");
 let menu = document.querySelector(".menu");
 let wrap = document.querySelector(".wrapper");
 
-let status = (but.dataset.status = false);
-
 function closeMenu() {
   section.hidden = !section.hidden;
   menu.hidden = !menu.hidden;

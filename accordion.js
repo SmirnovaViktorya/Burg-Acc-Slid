@@ -1,10 +1,15 @@
-"use strict";
+let accord = document.querySelector(".accordionList");
 
-let elem = document.querySelectorAll(".accElem");
+accord.addEventListener("click", function (event) {
+  let el;
+  if (event.target.tagName == "LI") {
+    el = event.target;
+  } else {
+    el = event.target.parentElement;
+  }
+  let check = el.children[1];
+  let text = el.nextElementSibling;
 
-function open_close() {
-  let check = this.children[1];
-  let text = this.nextElementSibling;
   if (check.classList.contains("checkT")) {
     check.classList.remove("checkT");
     check.classList.add("checkF");
@@ -13,8 +18,13 @@ function open_close() {
     check.classList.remove("checkF");
   }
   text.hidden = !text.hidden;
-}
+  let arr = Array.from(el.parentElement.children);
+  arr = arr.filter((i) => i.tagName == "P" && i != text);
+  for (let i = 0; i < arr.length; i++) {
+    arr[i].hidden = true;
+    let ch = arr[i].previousElementSibling.children[1];
+    ch.classList.add("checkT");
+    ch.classList.remove("checkF");
+  }
+});
 
-for (let i of elem) {
-  i.addEventListener("click", open_close);
-}
